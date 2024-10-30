@@ -10,7 +10,7 @@ CARD con SWIPE laterale e nel mio caso con 3 viste:
 
 <p>Volevo condividere una scheda che ho creato con l'aiuto delle varie community per visualizzare le informazioni di una persona tramite l'utilizzo dell'app HA companion.</p>
 
-<p dir="auto">Instructions:</p>
+<p dir="auto">Istruzioni:</p>
 
 da Hacs, installare:
 1. swipe-card
@@ -25,18 +25,18 @@ poi ...
 5. in HA create una card manuale e incollate il contenuto del file: ha_person_card.yaml
 6. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati simone, con i vostri appena abilitati
 
-Alla fine ci troveremo ad avere:
-Prima schermata (in ordine dall'alto e da sinistra a destra):
+<strong>Alla fine ci troveremo ad avere:</strong><br />
+<strong>1. Prima schermata (in ordine dall'alto e da sinistra a destra):</strong>
 1. Persona con simbolo se è in casa o no, e testo con dichiarata la zona dove si trova (in base alle zone impostate in HA)
 2. % batteria con cambio colore in base al livello, presa di corrente per capire se è sottocarica o no, % memoria libera interna dello smartphone, tipo di rete (se è wifi o 5G)
 3. ultimo aggionamento effetuato e la distanza che la persona si trova da casa
 
-Seconda schermata:
+<strong>2. Seconda schermata:</strong>
 1. router al quale si è connessi
 2. se siamo fermi o in movimento
 3. indirizzo in cui ci si trova nel momento dell'ultima rilevazione
 
-Terza schermata:
+<strong>3. Terza schermata:</strong>
 1. titolo: other info
 2. IP esterno della reta (non ip di casa se siamo in wifi)
 3. ultimo riavvio dello smartphone
@@ -65,5 +65,4 @@ Join our Telegram channel dedicated to Home Assistant news:
 Join our Telegram channel dedicated to home automation products, there are lots of offers:
 
 [![Offerte Domotica](https://github.com/Simonz82/desktop-tutorial/blob/main/offerte_domotica.jpg)](https://t.me/offerte_domotica_ita)
-
 
