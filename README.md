@@ -10,7 +10,7 @@ CARD con SWIPE laterale e nel mio caso con 3 viste:
 
 <p>Volevo condividere una scheda che ho creato con l'aiuto delle varie community per visualizzare le informazioni di una persona tramite l'utilizzo dell'app HA companion.</p>
 
-<p dir="auto">Instructions:</p>
+<p dir="auto">Istruzioni:</p>
 
 da Hacs, installare:
 1. swipe-card
