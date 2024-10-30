@@ -1,4 +1,4 @@
-<h2><span style="text-decoration: underline;"><strong>🧑🏻 ha_person_card card for home assistant</strong></span></h2>
+<h2><span style="text-decoration: underline;"><strong>🧑🏻 Person card for home assistant</strong></span></h2>
 
 CARD con SWIPE laterale e nel mio caso con 3 viste:
 
