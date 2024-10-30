@@ -1,0 +1,54 @@
+# Sensori per Person Card
+- platform: template
+  sensors:
+    simone_battery_icon:
+      friendly_name: "simone battery icon"
+      value_template: >
+        {% set state = states('sensor.simone_battery_level')|float %}
+        {% if state >= 0 and state < 10 %} mdi:battery-10
+        {% elif state >= 10 and state < 20 %} mdi:battery-20
+        {% elif state >= 20 and state < 30 %} mdi:battery-30
+        {% elif state >= 30 and state < 40 %} mdi:battery-40
+        {% elif state >= 40 and state < 50 %} mdi:battery-50
+        {% elif state >= 50 and state < 60 %} mdi:battery-60
+        {% elif state >= 60 and state < 70 %} mdi:battery-70
+        {% elif state >= 70 and state < 80 %} mdi:battery-80
+        {% elif state >= 80 and state < 95 %} mdi:battery-90
+        {% else %} mdi:battery
+        {% endif %}
+- platform: template
+  sensors:
+    simone_battery_color:
+      friendly_name: "simone battery color"
+      value_template: >
+        {% set state = states('sensor.simone_battery_level')|float %}
+        {% if state >= 0 and state < 20 %} red
+        {% elif state >= 20 and state < 40 %} orange
+        {% elif state >= 40 and state < 50 %} yellow
+        {% else %} green
+        {% endif %}
+
+- platform: template
+  sensors:
+    simone_geo_1:
+      friendly_name: "simone geo 1"
+      value_template: >
+        {{ (states('sensor.simone_geocoded_location')).split(",")[0] }}
+- platform: template
+  sensors:
+    simone_geo_2:
+      friendly_name: "simone geo 2"
+      value_template: >
+        {{ (states('sensor.simone_geocoded_location')).split(",")[1] }}
+
+- platform: template
+  sensors:
+    simone_proximity:
+      friendly_name: "simone proximity"
+      value_template: >
+        {% set state = states('proximity.simone')|float %}
+        {% if state >= 0 and state < 50 %} {{ (states('proximity.simone')| int * 0)}} km
+        {% elif state >= 50 and state < 999 %} {{ (states('proximity.simone')| int * 0.001) | round(1)}} km
+        {% elif state > 999 and state <= 99999 %} {{ (states('proximity.simone')| int * 0.001) | round(1)}} km
+        {% elif state > 99999 %} {{ (states('proximity.simone')| int * 0.001) | round(0)}} km
+        {% endif %}
