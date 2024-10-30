@@ -14,11 +14,11 @@ da Hacs, installare:
 3. mushroom
 
 poi ...
-1. nel file HA sensor.yaml, inserire il contenuto di ha_person_card_sensor.yaml, se non si dispone del file sensor.yaml è necessario creare sensor.yaml nella cartella config/, aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
+1. nel file HA sensor.yaml, inserire il contenuto di person_card_sensor.yaml, se non si dispone del file sensor.yaml è necessario creare sensor.yaml nella cartella config/, aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
 2. sul vostro smartphone installare l'app Home Assistant companion
 3. dall'app andate in impostazioni, app complementare, gestione sensori
 4. abilitate tutti i sensori che servono e che trovare nei vari file di configurazioni: sensori di rete,sensori ultimo riavvio, sensori di prossimità, sensori batteria, sensori di archiviazione, sensori di attività, sensori di posizione.
-5. in HA create una card manuale e incollate il contenuto del file: ha_person_card.yaml
+5. in HA create una card manuale e incollate il contenuto del file: person_card.yaml
 6. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati simone, con i vostri appena abilitati
 
 <strong>Alla fine ci troveremo ad avere:</strong><br />
