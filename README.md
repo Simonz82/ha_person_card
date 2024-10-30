@@ -25,14 +25,17 @@ poi ...
 <strong>1. Prima schermata (in ordine dall'alto e da sinistra a destra):</strong>
 1. Persona con simbolo se è in casa o no, e testo con dichiarata la zona dove si trova (in base alle zone impostate in HA)
 2. % batteria con cambio colore in base al livello, presa di corrente per capire se è sottocarica o no, % memoria libera interna dello smartphone, tipo di rete (se è wifi o 5G)
-3. ultimo aggionamento effetuato e la distanza che la persona si trova da casa
+3. a sinistra: ultimo aggionamento effetuato, a destra: la distanza che la persona si trova da casa
 
 <p><img src="example/example1.jpg" alt="" /></p>
+
+<p><img src="example/example5.jpg" alt="" /></p>
 
 <strong>2. Seconda schermata:</strong>
 1. router al quale si è connessi
 2. se siamo fermi o in movimento
 3. indirizzo in cui ci si trova nel momento dell'ultima rilevazione
+4. numero civico in cui ci si trova nel momento dell'ultima rilevazione
 
 <p><img src="example/example2.jpg" alt="" /></p>
 
