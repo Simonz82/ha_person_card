@@ -15,11 +15,12 @@ da Hacs, installare:
 
 poi ...
 1. nel file HA sensor.yaml, inserire il contenuto di person_card_sensor.yaml, se non si dispone del file sensor.yaml è necessario creare sensor.yaml nella cartella config/, aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
-2. sul vostro smartphone installare l'app Home Assistant companion
-3. dall'app andate in impostazioni, app complementare, gestione sensori
-4. abilitate tutti i sensori che servono e che trovare nei vari file di configurazioni: sensori di rete,sensori ultimo riavvio, sensori di prossimità, sensori batteria, sensori di archiviazione, sensori di attività, sensori di posizione.
-5. in HA create una card manuale e incollate il contenuto del file: person_card.yaml
-6. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati simone, con i vostri appena abilitati
+2. Installare nel menù impostatione - dispositivi e servizi: l'integrazione prossimità
+3. sul vostro smartphone installare l'app Home Assistant companion
+4. dall'app andate in impostazioni, app complementare, gestione sensori
+5. abilitate tutti i sensori che servono e che trovare nei vari file di configurazioni: sensori di rete,sensori ultimo riavvio, sensori di prossimità, sensori batteria, sensori di archiviazione, sensori di attività, sensori di posizione.
+6. in HA create una card manuale e incollate il contenuto del file: person_card.yaml
+7. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati simone, con i vostri appena abilitati
 
 <strong>Alla fine ci troveremo ad avere:</strong><br />
 <strong>1. Prima schermata (in ordine dall'alto e da sinistra a destra):</strong>
