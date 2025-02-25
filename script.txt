@@ -1,0 +1,26 @@
+#rinomina simone con il vostro dispositivo
+
+alias: simone find phone
+sequence:
+  - action: notify.mobile_app_simone
+    data:
+      message: command_ringer_mode
+      data:
+        command: normal
+  - action: notify.mobile_app_simone
+    data:
+      message: command_volume_level
+      data:
+        media_stream: notification_stream
+        command: 50  # Imposto al massimo (100%), più probabile che si senta
+  - action: notify.mobile_app_simone
+    data:
+      message: Finding phone
+      title: Home Assistant
+      data:
+        ttl: 0
+        priority: high
+        channel: alarm_stream  # Uso alarm_stream per far squillare il telefono
+mode: single
+description: "Automazione per trovare il telefono di Simone"
+icon: mdi:phone-check
