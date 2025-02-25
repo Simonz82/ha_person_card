@@ -20,7 +20,8 @@ poi ...
 4. dall'app andate in impostazioni, app complementare, gestione sensori
 5. abilitate tutti i sensori che servono e che trovare nei vari file di configurazioni: sensori di rete,sensori ultimo riavvio, sensori di prossimità, sensori batteria, sensori di archiviazione, sensori di attività, sensori di posizione.
 6. in HA create una card manuale e incollate il contenuto del file: person_card.yaml
-7. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati simone, con i vostri appena abilitati
+7. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati "simone", con i vostri appena abilitati
+8. copiate il contenuto del file script.txt e create uno script in home assistant e incollare il testo, rinominate "simone" con il nome del vostro device
 
 <strong>Alla fine ci troveremo ad avere:</strong><br />
 <strong>1. Prima schermata (in ordine dall'alto e da sinistra a destra):</strong>
@@ -34,7 +35,7 @@ poi ...
 
 <strong>2. Seconda schermata:</strong>
 1. router al quale si è connessi
-2. se siamo fermi o in movimento
+2. se siamo fermi o in movimento, simbolo del telefono rosso, se lo si clicka attiva lo script: find phone, farà suonare il vostro telefono per trovarlo in caso di smarrimaneto.
 3. indirizzo in cui ci si trova nel momento dell'ultima rilevazione
 4. numero civico in cui ci si trova nel momento dell'ultima rilevazione
 
