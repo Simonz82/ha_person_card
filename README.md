@@ -20,8 +20,11 @@ poi ...
 4. dall'app andate in impostazioni, app complementare, gestione sensori
 5. abilitate tutti i sensori che servono e che trovare nei vari file di configurazioni: sensori di rete,sensori ultimo riavvio, sensori di prossimità, sensori batteria, sensori di archiviazione, sensori di attività, sensori di posizione.
 6. in HA create una card manuale e incollate il contenuto del file: person_card.yaml
-7. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati "simone", con i vostri appena abilitati
-8. copiate il contenuto del file script.txt e create uno script in home assistant e incollare il testo, rinominate "simone" con il nome del vostro device
+7. nel file sensor.yaml, inserire il contenuto di sensor.yaml, se non si dispone del file:
+    a. è necessario creare sensor.yaml nella cartella config/
+    b. aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
+8. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati "simone", con i vostri appena abilitati
+9. copiate il contenuto del file script.txt e create uno script in home assistant e incollare il testo, rinominate "simone" con il nome del vostro device
 
 <strong>Alla fine ci troveremo ad avere:</strong><br />
 <strong>1. Prima schermata (in ordine dall'alto e da sinistra a destra):</strong>
