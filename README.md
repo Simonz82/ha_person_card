@@ -14,17 +14,16 @@ da Hacs, installare:
 3. mushroom
 
 poi ...
-1. nel file HA sensor.yaml, inserire il contenuto di person_card_sensor.yaml, se non si dispone del file sensor.yaml è necessario creare sensor.yaml nella cartella config/, aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
+1. nel file sensor.yaml, inserire il contenuto di sensor.yaml, se non si dispone del file:
+    - è necessario creare sensor.yaml nella cartella config/
+    - aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
+    - all'interno del codice, dovete andare a sostituire tutti i miei sensori chiamati "simone", con i vostri appena abilitati
 2. Installare nel menù impostatione - dispositivi e servizi: l'integrazione prossimità
 3. sul vostro smartphone installare l'app Home Assistant companion
 4. dall'app andate in impostazioni, app complementare, gestione sensori
 5. abilitate tutti i sensori che servono e che trovare nei vari file di configurazioni: sensori di rete,sensori ultimo riavvio, sensori di prossimità, sensori batteria, sensori di archiviazione, sensori di attività, sensori di posizione.
 6. in HA create una card manuale e incollate il contenuto del file: person_card.yaml
-7. nel file sensor.yaml, inserire il contenuto di sensor.yaml, se non si dispone del file:
-    - è necessario creare sensor.yaml nella cartella config/
-    - aprire il file configuration.yaml e inserire questa riga: sensor: !include sensor.yaml
-9. all'interno del codice della card e del codice inserito nel sensor.yaml, dovete andare a sostituire tutti i miei sensori chiamati "simone", con i vostri appena abilitati
-10. copiate il contenuto del file script.txt e create uno script in home assistant e incollare il testo, rinominate "simone" con il nome del vostro device
+7. copiate il contenuto del file script.txt e create uno script in home assistant e incollare il testo, rinominate "simone" con il nome del vostro device
 
 <strong>Alla fine ci troveremo ad avere:</strong><br />
 <strong>1. Prima schermata (in ordine dall'alto e da sinistra a destra):</strong>
